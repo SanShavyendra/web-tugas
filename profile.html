@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Developer</title>
+    <link rel="stylesheet" type="text/css" href="./css/profile.css"/>
+</head>
+<body>
+    <section class="banner">
+      <header>
+        <a href="#" class="Logo"><span>My</span>Portofolio_</a>
+        <!-- <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul> -->
+      </header>
+      <div class="content">
+        <h3>Hey_</h3>
+        <h2>I am <span id="text"></span></h2>
+        <p>
+          programming is the process of creating programs on a computer . Making this program can be in the form of websites, software, android applications, and so on. Programming begins through several stages, such as writing, testing, revising, evaluating, and testing again.
+        </p>
+        <a href="./website.html"><button>Return</button></a>
+        <!-- <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>Let's Chat</button> -->
+      </div>
+      <img src="https://gitlab.com/fatiyasalsabila123/landing-page/-/raw/main/images/colors.png" class="colors">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1d9b3766-e769-4526-836b-777733ae249b/dd8ex7e-6904877d-cd56-4cce-8eb2-58f32748e217.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFkOWIzNzY2LWU3NjktNDUyNi04MzZiLTc3NzczM2FlMjQ5YlwvZGQ4ZXg3ZS02OTA0ODc3ZC1jZDU2LTRjY2UtOGViMi01OGYzMjc0OGUyMTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RfdZ2C1xw8fRSAdqanI9FpNWJKQQBChbUgU6xQM-L-U" class="men">
+      <ul class="sci">
+      
+        <li><a href="https://www.instagram.com/bignaughty.boy"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://twitter.com/namhaexpride"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+      <div class="dayNight">
+        <ion-icon name="sunny-outline"></ion-icon>
+        <ion-icon name="moon-outline"></ion-icon>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typingtext = new Typed("#text", {
+            strings : ["Nayscha", "Junior Programer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 50,
+            backdelay : 1000,
+        })
+        let banner = document.querySelector('.banner');
+        let dayNight = document.querySelector('.dayNight');
+        dayNight.onclick = function(){
+            banner.classList.toggle('night')
+        }
+    </script>
+  </body>
+</html>
